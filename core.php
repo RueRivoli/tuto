@@ -1,11 +1,7 @@
 <?php
-
-
-$db = mysqli_connect('localhost', 'root', 'root');
+$db = mysqli_connect('localhost', 'root', 'root', 'tuto');
 if (!$db)
 	die("Connection failed: " . mysqli_connect_error());
-mysqli_select_db('tuto');
 mysqli_query("SET NAMES '\utf8'");
-
-require "model/category.php";
+include "model/model.php";
 ?>
