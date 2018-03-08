@@ -1,0 +1,15 @@
+{
+  "name": "todoList",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    /*environnement de dev*/
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --hot",
+    /*environnement de prod*/
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
