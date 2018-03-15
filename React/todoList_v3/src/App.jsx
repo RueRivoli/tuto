@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Components/header.jsx';
+import TodoInput from './Components/todoInput.jsx';
+import TodoItem from './Components/todoItem.jsx';
 import './App.css';
 
 class App extends Component {
@@ -38,7 +40,15 @@ class App extends Component {
     return (
         <div className="App">
             <div className="box">
-            <Header/>   
+            <Header/>
+            <TodoInput todoText="" addTodo={this.addTodo}/>
+            <ul>
+                {
+                    this.state.todos.map((todo) => {
+                        return <TodoItem todo={todo} key={todo.id} id={todo.id} removeTodo={this.removeTodo}/>
+                    })
+                }
+            </ul>
             </div>
         </div>
   );

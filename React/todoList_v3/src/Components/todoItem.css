@@ -1,0 +1,19 @@
+.item{
+    border: 2px solid purple;
+    color: black;
+    background-color: brown;
+    margin-bottom: 2px;
+}
+
+.removeTodo{
+    width: 15%;
+    height: 30%;
+    background-color: pink;
+    color: blue;
+    float:left;
+}
+
+.removeTodo:hover{
+    background-color: blue;
+    color:pink;
+}
